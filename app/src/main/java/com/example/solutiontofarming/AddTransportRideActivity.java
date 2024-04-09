@@ -24,7 +24,6 @@ import com.example.solutiontofarming.data.Extras;
 import com.example.solutiontofarming.data.TransportRide;
 import com.google.gson.Gson;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
@@ -36,7 +35,7 @@ public class AddTransportRideActivity extends AppCompatActivity {
     ProgressDialog dialog;
     ConstraintLayout mainLayout;
     Button buttonContinue;
-    String URL = "http://"+ Extras.VM_IP+":7000/insert-one/rides";
+    String URL = Extras.API_URL +"/insert-one/rides";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

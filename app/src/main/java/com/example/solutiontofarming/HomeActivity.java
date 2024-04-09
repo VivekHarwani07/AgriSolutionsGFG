@@ -340,6 +340,7 @@ public class HomeActivity extends AppCompatActivity {
         String id="0852853b3628f9f0ef79308eacb461b4";
         String Url="https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+id;
 
+        System.out.println(Url);
         RequestQueue que1 = Volley.newRequestQueue(getApplicationContext());
 
         JsonObjectRequest req = new JsonObjectRequest(Request.Method.GET, Url, null, new Response.Listener<JSONObject>() {

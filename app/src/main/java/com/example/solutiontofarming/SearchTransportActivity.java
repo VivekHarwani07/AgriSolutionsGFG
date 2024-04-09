@@ -271,8 +271,11 @@ public class SearchTransportActivity extends AppCompatActivity implements DatePi
 
         filteredRides.clear();
         for(int i=0; i<allRidesList.size(); i++){
+            Log.d(TAG, "filterRidesByDate:test  "+allRidesList.get(i).getWhen().getDate().toString());
+
             if(dates.contains(allRidesList.get(i).getWhen().getDate().toString())){
                 filteredRides.add(allRidesList.get(i));
+
             }
         }
 

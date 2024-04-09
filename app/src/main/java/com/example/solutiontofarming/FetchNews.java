@@ -15,7 +15,7 @@ import org.json.JSONArray;
 public class FetchNews {
     private static final String TAG = FetchNews.class.getSimpleName();
     private RequestQueue requestQueue;
-    private static final String API_URL = "http://"+ Extras.VM_IP +":7000/find-latest/agri_news/10";
+    private static final String API_URL = Extras.API_URL +"/find-latest/agri_news/10";
 
     public FetchNews(Context context) {
         requestQueue = Volley.newRequestQueue(context.getApplicationContext());

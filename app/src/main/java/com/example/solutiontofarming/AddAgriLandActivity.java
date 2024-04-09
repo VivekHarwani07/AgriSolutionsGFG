@@ -36,10 +36,8 @@ import com.android.volley.toolbox.Volley;
 import com.example.solutiontofarming.Validators.AgriLandValidator;
 import com.example.solutiontofarming.data.Address;
 import com.example.solutiontofarming.data.AgriLand;
-import com.example.solutiontofarming.data.AgriculturalLand;
 import com.example.solutiontofarming.data.Extras;
 import com.example.solutiontofarming.data.Field;
-import com.example.solutiontofarming.data.ID;
 import com.example.solutiontofarming.data.LandUser;
 import com.example.solutiontofarming.data.Lease;
 import com.example.solutiontofarming.data.Owner;
@@ -464,7 +462,7 @@ public class AddAgriLandActivity extends AppCompatActivity {
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 
-        String URL = "http://"+ Extras.VM_IP+":7000/insert-one/agri_lands";
+        String URL = Extras.API_URL +"/insert-one/agri_lands";
 
 
         Log.d("Add_Land", "addLandNew: "+agriLand.toString());

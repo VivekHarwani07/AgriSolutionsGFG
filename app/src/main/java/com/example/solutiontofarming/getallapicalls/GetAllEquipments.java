@@ -8,7 +8,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.solutiontofarming.FetchNews;
 import com.example.solutiontofarming.data.Extras;
 
 import org.json.JSONArray;
@@ -16,7 +15,7 @@ import org.json.JSONArray;
 public class GetAllEquipments {
     private RequestQueue requestQueue;
 
-    String GET_ALL_URL = "http://"+ Extras.VM_IP +":7000/find/agriequipments";
+    String GET_ALL_URL = Extras.API_URL +"/find/agriequipments";
 
     public GetAllEquipments(Context context){
         requestQueue = Volley.newRequestQueue(context);

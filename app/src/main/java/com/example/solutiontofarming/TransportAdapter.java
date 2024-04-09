@@ -2,6 +2,7 @@ package com.example.solutiontofarming;
 
 import android.content.Context;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,7 +68,7 @@ public class TransportAdapter extends BaseAdapter {
             TextView textView = convertView.findViewById(R.id.text_profile_status_in_transport);
             textView.setVisibility(View.VISIBLE);
         }*/
-
+            Log.d("", "getView: "+currTransport.getWhen().getDate());
         textViewDateTime.setText(currTransport.getWhen().getDate());
         textViewSource.setText(currTransport.getSource().getAddress());
         textViewDestination.setText(currTransport.getDestination().getAddress());

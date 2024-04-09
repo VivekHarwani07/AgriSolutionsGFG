@@ -122,6 +122,7 @@ public class ShowRideDetailsActivity extends AppCompatActivity {
 //             Uri.parse(url);
 //             startActivity(intent);
                 List<LatLng> path = getGeoPtsAlongRoute(transport.getSource(), transport.getDestination());
+                Log.d("", "onClick: "+path.get(0));
                 Intent intent = new Intent(getApplicationContext(),ShowRideRouteActivity.class);
                 intent.putExtra("EXTRA_PATH", (Serializable) path);
                 startActivity(intent);

@@ -22,7 +22,6 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.solutiontofarming.data.AgriEquipment;
 import com.example.solutiontofarming.data.Extras;
-import com.example.solutiontofarming.data.TransportRide;
 import com.google.gson.Gson;
 
 import org.json.JSONObject;
@@ -35,7 +34,7 @@ public class AddAgriEquipmentActivity extends AppCompatActivity {
     ProgressDialog dialog;
     ConstraintLayout mainLayout;
     AgriEquipment agriEquipment;
-    String URL = "http://"+ Extras.VM_IP+":7000/insert-one/agriequipments";
+    String URL = Extras.API_URL +"/insert-one/agriequipments";
 
 
     JSONObject jsonObjectAgriEqui = null;

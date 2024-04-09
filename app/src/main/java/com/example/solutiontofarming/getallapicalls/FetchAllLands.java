@@ -16,7 +16,7 @@ import org.json.JSONArray;
 public class FetchAllLands {
     private static final String TAG = com.example.solutiontofarming.FetchNews.class.getSimpleName();
     private RequestQueue requestQueue;
-    private static final String API_URL = "http://"+ Extras.VM_IP +":7000/find/agri_lands";
+    private static final String API_URL = Extras.API_URL +"/find/agri_lands";
 
     public FetchAllLands(Context context) {
         requestQueue = Volley.newRequestQueue(context.getApplicationContext());

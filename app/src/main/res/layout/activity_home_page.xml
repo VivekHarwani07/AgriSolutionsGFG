@@ -120,7 +120,7 @@
                 <TextView
                     android:id="@+id/text_address_for_temp"
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:drawableEnd="@drawable/ic_location"
                     android:gravity="center|end"

@@ -5,28 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
 import com.example.solutiontofarming.data.AgriLand;
-import com.example.solutiontofarming.data.AgriculturalLand;
 import com.example.solutiontofarming.data.Extras;
-import com.example.solutiontofarming.data.TransportRide;
 import com.example.solutiontofarming.getallapicalls.FetchAllLands;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.gson.Gson;
-import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
 import org.json.JSONArray;
@@ -48,7 +38,7 @@ public class ShowAvailableAgriLandsActivity extends AppCompatActivity implements
 
     String TAG = "Fetch_Lands";
 
-    private static final String API_URL = "http://"+ Extras.VM_IP +":7000/find/agri_lands";
+    private static final String API_URL = Extras.API_URL +"/find/agri_lands";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

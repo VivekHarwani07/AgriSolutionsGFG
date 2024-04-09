@@ -16,7 +16,7 @@ public class GetAllWarehouses {
 
     private RequestQueue requestQueue;
 
-    String GET_ALL_URL = "http://"+ Extras.VM_IP +":7000/find/warehouses";
+    String GET_ALL_URL = Extras.API_URL +"/find/warehouses";
 
     public GetAllWarehouses(Context context){
         requestQueue = Volley.newRequestQueue(context);

@@ -2,7 +2,6 @@ package com.example.solutiontofarming;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -38,7 +37,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
-import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -180,7 +178,7 @@ public class DiscussionForumActivity extends AppCompatActivity {
     private void saveMessageToDBFinal(JSONObject jsonObjectChatMessage){
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 
-        String URL = "http://"+ Extras.VM_IP+":7000/insert-one/group_chats";
+        String URL = Extras.API_URL +"/insert-one/group_chats";
 
         final String requestBody = jsonObjectChatMessage.toString();
 

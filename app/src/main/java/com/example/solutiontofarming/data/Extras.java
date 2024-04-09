@@ -7,7 +7,7 @@ public class Extras {
 
     public static String EXTRA_ADDRESS_OBJECT = "EXTRA_ADDRESS_OBJECT";
 
-    public static final String API_KEY = "AIzaSyBgXbVJEa9ev4akoZhezFVYeGfneYbHlRQ";
+    public static final String API_KEY = "AIzaSyCaxN8n_th_YfvW-nAQWx-LYOPr9W2A8F8";
 
-    public static final String VM_IP = "35.225.145.231";
+    public static final String API_URL = "https://agrisolutionsapi.onrender.com";
 }

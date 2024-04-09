@@ -20,7 +20,6 @@ import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.solutiontofarming.data.AgriEquipment;
 import com.example.solutiontofarming.data.Extras;
 import com.example.solutiontofarming.data.Warehouse;
 import com.google.gson.Gson;
@@ -35,7 +34,7 @@ public class AddWareHouseActivity extends AppCompatActivity {
     ProgressDialog dialog;
     ConstraintLayout mainLayout;
     Warehouse warehouse;
-    String URL = "http://"+ Extras.VM_IP+":7000/insert-one/warehouses";
+    String URL = Extras.API_URL +"/insert-one/warehouses";
     JSONObject jsonObjectWarehouse = null;
 
     @Override

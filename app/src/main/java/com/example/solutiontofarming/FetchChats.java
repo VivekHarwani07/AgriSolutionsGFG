@@ -17,7 +17,7 @@ public class FetchChats {
     private static final String TAG = FetchChats.class.getSimpleName();
 
     private RequestQueue requestQueue;
-    private static final String API_URL = "http://"+ Extras.VM_IP +":7000/find/group_chats";
+    private static final String API_URL = Extras.API_URL +"/find/group_chats";
 
     public FetchChats(Context context) {
         requestQueue = Volley.newRequestQueue(context.getApplicationContext());
